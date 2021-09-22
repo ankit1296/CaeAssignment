@@ -1,0 +1,10 @@
+<div class="show-roster">
+    <div class="header">
+        <button mat-button color="accent" (click)="logout()">Logout</button>
+    </div>
+    <div class="flights-container">
+        <div class="assigned-flights" *ngFor="let flight of rosterList">
+            <app-roster-view [flightDetails]="flight" (click)="showDetails(flight)"></app-roster-view>
+        </div>
+    </div>
+</div>

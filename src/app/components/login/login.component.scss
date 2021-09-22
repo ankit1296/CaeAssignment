@@ -1,0 +1,28 @@
+.login-component {
+    display: flex;
+    justify-content: center;
+    .login-header {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 10px 0px;
+    }
+    .loginForm {
+        width: 300px;
+    }
+    .login-fields {
+        width: 100%;
+    }
+     ::ng-deep .loginForm {
+        .mat-form-field-appearance-legacy .mat-form-field-underline {
+            background-color: green;
+        }
+        .mat-form-field-appearance-legacy .mat-form-field-label {
+            color: grey;
+        }
+        .mat-button.mat-accent,
+        .mat-icon-button.mat-accent,
+        .mat-stroked-button.mat-accent {
+            color: white;
+            background-color: red;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.show-roster {
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .flights-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .assigned-flights {
+        width: 300px;
+    }
+}
+
+::ng-deep .show-roster {
+    .mat-button.mat-accent,
+    .mat-icon-button.mat-accent,
+    .mat-stroked-button.mat-accent {
+        color: white;
+        background-color: red;
+    }
+}

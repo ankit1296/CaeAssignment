@@ -1,0 +1,41 @@
+.roster-view {
+    border-bottom: solid 1px #999696;
+    .date {
+        margin: 0px 0px;
+        background: #c8c5c5;
+        font-weight: 500;
+    }
+    .standby-text {
+        color: grey;
+        font-size: 12px;
+    }
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 50px;
+    }
+    .inner-container-second {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 50px;
+        position: relative;
+    }
+    .flight-data {
+        display: flex;
+    }
+    .plane-icon {
+        font-size: 30px;
+    }
+    .venue {
+        font-weight: 500;
+        margin: 4px 6px;
+    }
+    .time {
+        color: red;
+        position: absolute;
+        bottom: 6px;
+        right: 10px;
+    }
+}

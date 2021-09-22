@@ -1,0 +1,13 @@
+<div class="see-flight-details" *ngIf="flightDetails">
+    <div class="header"><strong>Flight Details</strong></div>
+    <div>
+        <div>Aircraft Type: {{ flightDetails.aircraftType }}</div>
+        <div>Captain: {{ flightDetails.captain }}</div>
+        <div>Duty Id: {{ flightDetails.dutyId }}</div>
+        <div>First Officer: {{ flightDetails.firstOfficer }}</div>
+        <div>Flight Attendant : {{ flightDetails.flightAttendant }}</div>
+        <div>Flightner : {{ flightDetails.flightnr }}</div>
+        <div>Tail : {{ flightDetails.tail }}</div>
+        <app-roster-view [flightDetails]="flightDetails"></app-roster-view>
+    </div>
+</div>

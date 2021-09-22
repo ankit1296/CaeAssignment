@@ -1,0 +1,23 @@
+<div class="login-component row">
+    <div class="d-flex justify-content-center login-header">
+        <h2><strong>RosterApp Login</strong></h2>
+    </div>
+    <form [formGroup]="loginForm" class="loginForm" (ngSubmit)="loginToRosterApp()">
+        <div class="field-wrapper">
+            <mat-form-field class="login-fields">
+                <mat-label>Username</mat-label>
+                <input id="username" type="text" formControlName="username" matInput required />
+            </mat-form-field>
+        </div>
+
+        <div class="field-wrapper">
+            <mat-form-field class="login-fields">
+                <mat-label>Password</mat-label>
+                <input id="password" type="password" formControlName="password" matInput required />
+            </mat-form-field>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" mat-button color="accent">Login</button>
+        </div>
+    </form>
+</div>

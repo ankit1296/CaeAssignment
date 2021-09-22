@@ -1,0 +1,13 @@
+.see-flight-details {
+    background: none;
+    .header {
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+
+::ng-deep .mat-dialog-container {
+    background: #403e3e;
+}

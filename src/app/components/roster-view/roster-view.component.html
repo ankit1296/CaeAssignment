@@ -1,0 +1,50 @@
+<div class="roster-view" *ngIf="flightDetails">
+    <div *ngIf="flightDetails.displayDate" class="date">
+        {{ flightDetails.convertedDate | dateString }}
+    </div>
+    <div class="d-flex">
+        <div class="inner-container">
+            <div *ngIf="flightDetails.dutyCode === 'FLIGHT'" class="flight-data">
+                <i class="fa fa-plane plane-icon"></i>
+                <div class="venue">
+                    {{ flightDetails.departure }}-{{ flightDetails.destination }}
+                </div>
+            </div>
+            <div *ngIf="flightDetails.dutyCode === 'Standby'" class="flight-data">
+                <i class="fa fa-paste plane-icon"></i>
+                <div class="venue">
+                    <div>Standby</div>
+                    <div class="standby-text">SBY ({{ flightDetails.departure }})</div>
+                </div>
+            </div>
+            <div *ngIf="flightDetails.dutyCode === 'POSITIONING'" class="flight-data">
+                <i class="fa fa-plane plane-icon"></i>
+                <div class="venue">
+                    {{ flightDetails.departure }}-{{ flightDetails.destination }}
+                </div>
+            </div>
+            <div *ngIf="flightDetails.dutyCode === 'OFF'" style="margin-left: 10px" class="flight-data">
+                <i class="fa fa-plane plane-icon"></i>
+
+                <div class="venue">
+                    <div>Off</div>
+                    <div class="standby-text">{{ flightDetails.departure }}</div>
+                </div>
+            </div>
+            <div *ngIf="flightDetails.dutyCode === 'LAYOVER'" class="flight-data">
+                <i class="fa fa-suitcase plane-icon"></i>
+                <div class="venue">
+                    <div>Layover</div>
+                    <div class="standby-text">{{ flightDetails.departure }}</div>
+                </div>
+            </div>
+
+            <div></div>
+        </div>
+        <div class="inner-container-second">
+            <div class="time" *ngIf="flightDetails.timeDepart">
+                {{ flightDetails.timeDepart }} - {{ flightDetails.timeArrive }}
+            </div>
+        </div>
+    </div>
+</div>
